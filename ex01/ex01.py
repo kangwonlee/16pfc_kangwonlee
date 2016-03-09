@@ -8,3 +8,4 @@ print('I "said" do not touch this.')
 
 print("Kangwon Lee")
 print("2016 03 09 19:49")
+print("Lee Se Dol : Alpha Go = 0:1")
