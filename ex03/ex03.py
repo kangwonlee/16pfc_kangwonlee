@@ -1,4 +1,6 @@
+#-*-coding:cp949
 # http://learnpythonthehardway.org/book/ex3.html
+# 이제 닭의 수를 셀 것임
 print "I will now count my chickens:"
 
 print "Hens", 25 + 30 / 6
