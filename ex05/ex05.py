@@ -5,7 +5,7 @@ my_weight_kg = 80
 my_eyes = 'Brown'
 my_teeth = 'White'
 my_hair = 'Black'
-
+# place holder
 print "Let's talk about %s." % my_name
 print "He's %d centimeters tall." % my_height_cm
 print "He's %d kilograms heavy." % my_weight_kg
