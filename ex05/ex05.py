@@ -1,6 +1,6 @@
 my_name = 'Kangwon Lee'
 my_age = 46  # It's a lie
-my_height_cm = 180
+my_height_cm = 180.5
 my_weight_kg = 80
 my_eyes = 'Brown'
 my_teeth = 'White'
