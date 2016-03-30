@@ -10,8 +10,12 @@ I'll do a list:
 \t* Catnip\n\t* Grass
 '''
 
-print(tabby_cat)
-print(tabby_cat2)
-print(persian_cat)
-print(backslash_cat)
+print("%%s : %s" % tabby_cat)
+print("%%r : %r" % tabby_cat)
+print("%%s : %s" % tabby_cat2)
+print("%%r : %r" % tabby_cat2)
+print("%%s : %s" % persian_cat)
+print("%%r : %r" % persian_cat)
+print("%%s : %s" % backslash_cat)
+print("%%r : %r" % backslash_cat)
 print(fat_cat)
