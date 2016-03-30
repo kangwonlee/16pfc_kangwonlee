@@ -2,6 +2,7 @@
 
 days = "Mon Tue Wed Thu Fri Sat Sun"
 months = "Jan\nFeb\nMar\nApr\nMay\nJun\nJul\nAug"
+# TODO : explain backslash and \
 
 print("Here are the days: %s" % days)
 print("Here are the months: %s" % months)
