@@ -1,5 +1,6 @@
 from sys import argv
 
+print("argv = " + str(argv))
 script, first, second, third = argv
 
 print("The script is called: %s" % script)
