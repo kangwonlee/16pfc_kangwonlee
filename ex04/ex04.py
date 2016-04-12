@@ -8,9 +8,9 @@ carpool_capacity = cars_driven * space_in_a_car
 average_passengers_per_car = passengers / cars_driven
 
 
-print "There are", cars, "cars available."
-print "There are only", drivers, "drivers availalable."
-print "There will be", cars_not_driven, "empty cars today."
-print "We can transport", carpool_capacity, "people today."
-print "We have", passengers, "to carpool today."
-print "We need to put about", average_passengers_per_car, "in each car."
+print("There are "+str(cars)+ " cars available.")
+print("There are only "+str(drivers)+ " drivers availalable.")
+print("There will be "+str(cars_not_driven)+ " empty cars today.")
+print("We can transport "+str(carpool_capacity)+ " people today.")
+print("We have "+str(passengers)+ " to carpool today.")
+print("We need to put about "+str(average_passengers_per_car)+ " in each car.")
