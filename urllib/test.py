@@ -12,3 +12,6 @@ soup = bs4.BeautifulSoup(text, 'lxml')
 imgs = soup.find_all('img')
 
 print(imgs)
+
+urllib.urlretrieve("http://static.naver.net/m/photopc/exphotoimg/img/logo_naver4.gif",
+                   'test.gif')
