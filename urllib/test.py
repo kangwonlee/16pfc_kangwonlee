@@ -7,4 +7,8 @@ website = urllib.urlopen(url)
 text = website.read()
 website.close()
 
-print(text)
+# http://edoli.tistory.com/26
+soup = bs4.BeautifulSoup(text, 'lxml')
+imgs = soup.find_all('img')
+
+print(imgs)
