@@ -1,3 +1,4 @@
+# coding: utf-8
 def main():
     outer_diameter_mm = 50
     inner_diameters_mm = (40, 20, 30, 20, 10)
@@ -34,8 +35,9 @@ def write_upper_section(f, upper_coordinates_mm):
 
 
 def hatch_upper(f, upper_coordinates_mm):
-    f.write('hatch ? ANSI31 10 0 k ')
-    f.write('%g,%g' % (upper_coordinates_mm[-1][0] - 0.1, upper_coordinates_mm[-1][1] + 0.1))
+    f.write('hatch ')
+    f.write('%g,%g ' % (upper_coordinates_mm[-1][0] - 0.1, upper_coordinates_mm[-1][1] + 0.1))
+    f.write('ANSI31 10 0  ')
     f.write(' \n')
 
 
