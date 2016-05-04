@@ -18,13 +18,13 @@ imgs = soup.find_all('img')
 
 # 추출한 내용을 하나씩 살펴 봄
 for image_info in imgs:
-    image_url = image_info.get('src')
+    image_url = image_info.get('src')  # 각 image_info 의 인터넷 주소 url 을 추출함
     print('image_url = %s' % image_url)
-    url_parse_result = urlparse.urlparse(image_url)
+    url_parse_result = urlparse.urlparse(image_url)  # 인터넷 주소를 분석함
     print('url_parse_result = ' + str(url_parse_result))
-    parsed_path = url_parse_result.path
+    parsed_path = url_parse_result.path  # 인터넷 주소에서 경로 부분을 추출함
     print('parsed_path = ' + str(parsed_path))
-    parsed_path_split = parsed_path.split('/')
+    parsed_path_split = parsed_path.split('/')  # 추출된 경로를 '/' 기준으로 분리함
     print('parsed_path_split = ' + str(parsed_path_split))
-    filename = parsed_path_split[-1]
-    urllib.urlretrieve(image_url, filename)
+    filename = parsed_path_split[-1]  # 가장 마지막에서 파일 이름을 추출함
+    urllib.urlretrieve(image_url, filename)  # image_info 의 url 을 파일로 저장함
