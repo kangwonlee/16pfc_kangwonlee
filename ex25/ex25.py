@@ -40,3 +40,11 @@ def print_first_and_last_sorted(sentence):
     words = sort_sentence(sentence)
     print_first_word(words)
     print_last_word(words)
+
+# 여기까지 입력 후 add, commit
+
+# 각 행 주석 입력 후 commit
+
+# 각자 Study drills 시도 후 필요시 commit
+
+# 오류노트 에 각자 오류노트 작성
