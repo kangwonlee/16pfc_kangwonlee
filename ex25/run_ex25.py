@@ -16,3 +16,7 @@ sorted_words = ex25.sort_sentence(sentence)
 print("sorted_words = %s" % sorted_words)
 ex25.print_first_and_last(sentence)
 ex25.print_first_and_last_sorted(sentence)
+
+# Study Drills ex25.02
+help(ex25)
+help(ex25.break_words)
