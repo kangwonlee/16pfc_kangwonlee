@@ -17,7 +17,7 @@ soup = bs4.BeautifulSoup(text, 'lxml')
 imgs = soup.find_all('img')
 
 # 추출한 내용을 하나씩 살펴 봄
-for image_info in imgs[:5]:
+for image_info in imgs:
     image_url = image_info.get('src')
     print('image_url = %s' % image_url)
     url_parse_result = urlparse.urlparse(image_url)
@@ -26,5 +26,5 @@ for image_info in imgs[:5]:
     print('parsed_path = ' + str(parsed_path))
     parsed_path_split = parsed_path.split('/')
     print('parsed_path_split = ' + str(parsed_path_split))
-
-# urllib.urlretrieve()
+    filename = parsed_path_split[-1]
+    urllib.urlretrieve(image_url, filename)
