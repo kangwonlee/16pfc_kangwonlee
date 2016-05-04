@@ -20,6 +20,11 @@ imgs = soup.find_all('img')
 for image_info in imgs[:5]:
     image_url = image_info.get('src')
     print('image_url = %s' % image_url)
-    print(urlparse.urlparse(image_url))
+    url_parse_result = urlparse.urlparse(image_url)
+    print('url_parse_result = ' + str(url_parse_result))
+    parsed_path = url_parse_result.path
+    print('parsed_path = ' + str(parsed_path))
+    parsed_path_split = parsed_path.split('/')
+    print('parsed_path_split = ' + str(parsed_path_split))
 
 # urllib.urlretrieve()
