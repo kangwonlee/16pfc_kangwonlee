@@ -1,6 +1,7 @@
 # -*-coding:utf8
 import urllib
 import bs4
+import urlparse
 
 url = "http://photo.naver.com/camera/"
 
@@ -16,8 +17,9 @@ soup = bs4.BeautifulSoup(text, 'lxml')
 imgs = soup.find_all('img')
 
 # 추출한 내용을 하나씩 살펴 봄
-for image_info in imgs:
-    print(image_info.get('src'))
-    print(urllib.urlretrieve(image_info.get('src')))
+for image_info in imgs[:5]:
+    image_url = image_info.get('src')
+    print('image_url = %s' % image_url)
+    print(urlparse.urlparse(image_url))
 
 # urllib.urlretrieve()
