@@ -65,3 +65,5 @@ target/
 *.png
 *.pdf
 *.svg
+*.jpg
+*.gif
