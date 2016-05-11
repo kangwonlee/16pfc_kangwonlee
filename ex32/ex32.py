@@ -27,14 +27,14 @@ for i in range(0, 6):
     # append is a function that lists understand
     elements.append(i)
 
+# 또는 python 에서는 아래와 같이 할 수도 있다
+# list comprehension
+elements2 = [i for i in range(0, 6)]
+
 # now we can print them out too
 for i in elements:
     print("Element was: %d" % i)
 
-# 여기까지 입력 후 add, commit
+# 여기까지 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
-# 각 행 주석 입력 후 commit
-
-# 각자 Study drills 시도 후 필요시 commit
-
-# 오류노트 에 각자 오류노트 작성
+# 각자 Study drills 시도 후 필요시 commit  # 오류노트 에 각자 오류노트 작성
