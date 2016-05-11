@@ -31,6 +31,8 @@ for i in range(0, 6):
 # list comprehension
 elements2 = [i for i in range(0, 6)]
 
+elements = range(0, 6)
+
 # now we can print them out too
 for i in elements:
     print("Element was: %d" % i)
