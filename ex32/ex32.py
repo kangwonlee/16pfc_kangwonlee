@@ -18,6 +18,9 @@ for fruit in fruits:
 for i in change:
     print("I got %r" % i)
 
+# we can also build lists, first start with an empty one
+elements = []
+
 # 여기까지 입력 후 add, commitS
 
 # 각 행 주석 입력 후 commit
