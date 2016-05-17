@@ -19,6 +19,14 @@ if "1" == door:
     else:
         print("Well, doing %s is probably better. Bear runs away" % bear)
 
+elif "2" == door:
+    print("You stare into the endless abyss at Cthulu's retina.")
+    print("1. Blueberries.")
+    print("2. Yellow jacket clothepins.")
+    print("3. Understanding revolvers yelling melodies.")
+
+    insanity = raw_input("> ")
+
 # 여기까지 입력 후 add, commitS
 
 # 각 행 주석 입력 후 commit
