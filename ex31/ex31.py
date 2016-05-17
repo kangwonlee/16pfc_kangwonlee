@@ -12,6 +12,13 @@ if "1" == door:
 
     bear = raw_input("> ")
 
+    if "1" == bear:
+        print("The bear eats your face off. Good job!")
+    elif "2" == bear:
+        print("The bear eats your legs off. Good job!")
+    else:
+        print("Well, doing %s is probably better. Bear runs away" % bear)
+
 # 여기까지 입력 후 add, commitS
 
 # 각 행 주석 입력 후 commit
