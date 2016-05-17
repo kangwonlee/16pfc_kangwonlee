@@ -9,6 +9,10 @@ change = [1, 'pennies', 2, 'dimes', 3, 'quarters']
 for number in the_count:
     print("This is count %d" % number)
 
+# same as above
+for fruit in fruits:
+    print("A fruit of type: %s" % fruit)
+
 # 여기까지 입력 후 add, commitS
 
 # 각 행 주석 입력 후 commit
