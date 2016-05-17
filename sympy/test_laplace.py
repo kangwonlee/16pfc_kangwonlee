@@ -14,8 +14,8 @@ p = sp.Symbol('p', real=True)
 y = a * sp.sin(w * t + p)
 print("y = %s" % y)
 
-Y = laplace_transform(y, t, s)[0]
-print("Y = %s" % Y)
+Y = laplace_transform(y, t, s)
+print("Y = %s" % str(Y))
 
-yi = inverse_laplace_transform(Y, s, t)
+yi = inverse_laplace_transform(Y[0], s, t)
 print("yi = %s" % str(yi))
