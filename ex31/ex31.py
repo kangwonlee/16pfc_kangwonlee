@@ -27,6 +27,11 @@ elif "2" == door:
 
     insanity = raw_input("> ")
 
+    if ("1" == insanity) or ("2" == insanity):
+        print("Your body survives powered by a mind of jello. Good job!")
+    else:
+        print("The insanity rots your eyes into a pool of muck. Good job!")
+
 # 여기까지 입력 후 add, commitS
 
 # 각 행 주석 입력 후 commit
