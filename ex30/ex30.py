@@ -2,8 +2,8 @@
 # 참고문헌: http://learnpythonthehardway.org/book/ex30.html
 
 people = 30
-cars = 40
-trucks = 15
+cars = 20
+trucks = 50
 
 if cars > people:
     print("We should take the cars.")
