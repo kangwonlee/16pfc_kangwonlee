@@ -2,12 +2,16 @@
 # 참고문헌: http://learnpythonthehardway.org/book/ex32.html
 
 the_count = [1, 2, 3, 4, 5]
+the_count2 = range(1, 5 + 1)
 fruits = ['apples', 'oranges', 'pears', 'apricots']
 change = [1, 'pennies', 2, 'dimes', 3, 'quarters']
 
 # this first kind of for-loop goes through a list
 for number in the_count:
     print("This is count %d" % number)
+
+for number2 in the_count2:
+    print("This is count2 %d" % number2)
 
 # same as above
 for fruit in fruits:
