@@ -13,6 +13,11 @@ for number in the_count:
 for fruit in fruits:
     print("A fruit of type: %s" % fruit)
 
+# also we can go through mixed lists too
+# notice we have to use %r since we don't know what's in it
+for i in change:
+    print("I got %r" % i)
+
 # 여기까지 입력 후 add, commitS
 
 # 각 행 주석 입력 후 commit
