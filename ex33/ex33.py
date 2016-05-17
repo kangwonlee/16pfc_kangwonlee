@@ -12,6 +12,11 @@ while i < 6:
     print("Numbers now: %s" % str(numbers))
     print("At the bottom i is %d" % i)
 
+print("The numbers: ")
+
+for num in numbers:
+    print(num)
+
 # 여기까지 입력 후 add, commitS
 
 # 각 행 주석 입력 후 commit
