@@ -22,6 +22,8 @@ print("This should be five: %s" % five)
 
 
 def secret_formula(started):
+    five = '*****'
+    print("secret_formula five = %s" % five)
     jelly_beans = started * 500
     jars = jelly_beans / 1000
     crates = jars / 100
@@ -30,6 +32,7 @@ def secret_formula(started):
 
 start_point = 10000
 beans, jars, crates = secret_formula(start_point)
+print("main five = %s" % five)
 
 print("With a starting point of: %d" % start_point)
 print("We'd have %d beans, %d jars, and %d crates." % (beans, jars, crates))
