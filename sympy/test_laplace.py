@@ -6,12 +6,14 @@ import sympy as sp
 from sympy.integrals.transforms import inverse_laplace_transform
 from sympy.integrals.transforms import laplace_transform
 
-w, t, s, a, p = sp.symbols('w t s a p')
+t, s, p = sp.symbols('t s p')
+w = sp.Symbol('w', real=True)
+a = sp.Symbol('a', real=True)
 y = a * sp.sin(w * t)
 print("y = %s" % y)
 
 Y = laplace_transform(y, t, s)[0]
 print("Y = %s" % Y)
 
-yi = inverse_laplace_transform(Y, s, t)
+yi = inverse_laplace_transform(a * w/(s**2 + w**2), s, t)
 print("yi = %s" % str(yi))
