@@ -32,6 +32,9 @@ elif "2" == door:
     else:
         print("The insanity rots your eyes into a pool of muck. Good job!")
 
+else:
+    print("You stumble around and fall on a knife and die. Good job!")
+
 # 여기까지 입력 후 add, commitS
 
 # 각 행 주석 입력 후 commit
