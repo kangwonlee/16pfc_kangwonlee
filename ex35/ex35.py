@@ -42,6 +42,12 @@ def bear_room():
             print("I got no idea what that means.")
 
 
+def cthulhu_room():
+    print("Here you see the great evil Cthlhu.")
+    print("He, it, whatever stares at you and you go insane.")
+    print("Do you flee for your life or eat your head?")
+
+
 # 여기까지 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
 # 각자 Study drills 시도 후 필요시 commit  # 오류노트 에 각자 오류노트 작성
