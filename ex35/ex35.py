@@ -18,6 +18,15 @@ def gold_room():
     else:
         dead("You greedy bastard!")
 
+
+def bear_room():
+    print("There is a bear here.")
+    print("The bear has a bunch of honey.")
+    print("The fat bear is in front of another door.")
+    print("How are you going to move the bear?")
+    bear_moved = False
+
+
 # 여기까지 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
 # 각자 Study drills 시도 후 필요시 commit  # 오류노트 에 각자 오류노트 작성
