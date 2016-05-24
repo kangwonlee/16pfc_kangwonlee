@@ -47,6 +47,15 @@ def cthulhu_room():
     print("He, it, whatever stares at you and you go insane.")
     print("Do you flee for your life or eat your head?")
 
+    choice = raw_input("> ")
+
+    if "flee" in choice:
+        start()
+    elif "head" in choice:
+        dead("Well that was tasty!")
+    else:
+        cthulhu_room()
+
 
 # 여기까지 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
