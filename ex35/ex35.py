@@ -67,6 +67,15 @@ def start():
     print("There is a door to your right and left.")
     print("Which one do you take?")
 
+    choice = raw_input("> ")
+
+    if "left" == choice:
+        bear_room()
+    elif "right" == choice:
+        cthulhu_room()
+    else:
+        dead("You stumble around the room until you starve.")
+
 
 # 여기까지 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
