@@ -26,6 +26,21 @@ def bear_room():
     print("How are you going to move the bear?")
     bear_moved = False
 
+    while True:
+        choice = raw_input("> ")
+
+        if "take honey" == choice:
+            dead("The bear looks at you then slaps your face off.")
+        elif "taunt bear" == choice and not bear_moved:
+            print("The bear has moved from the door. You can go through it now.")
+            bear_moved = True
+        elif "taunt bear" == choice and bear_moved:
+            dead("The bear gets pissed off and chews your leg off.")
+        elif "open door" == choice and bear_moved:
+            gold_room()
+        else:
+            print("I got no idea what that means.")
+
 
 # 여기까지 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
