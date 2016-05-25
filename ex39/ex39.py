@@ -30,6 +30,12 @@ print('OR State has: %s' % cities['OR'])
 print('-' * 10)
 print("Michigan's abbreviation is: %s" % states['Michigan'])
 print("Florida's abbreviation is: %s" % states['Florida'])
+
+# print every state abbreviation
+print('-' * 10)
+for state, abbrev in states.items():
+    print("%s is abbreviated %s" % (state, abbrev))
+
 # 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
 # 각자 Study drills 시도 후 필요시 commit  # 오류노트 에 각자 오류노트 작성
