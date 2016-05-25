@@ -26,6 +26,10 @@ print('-' * 10)
 print('NY State has: %s' % cities['NY'])
 print('OR State has: %s' % cities['OR'])
 
+# print some states
+print('-' * 10)
+print("Michigan's abbreviation is: %s" % states['Michigan'])
+print("Florida's abbreviation is: %s" % states['Florida'])
 # 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
 # 각자 Study drills 시도 후 필요시 commit  # 오류노트 에 각자 오류노트 작성
