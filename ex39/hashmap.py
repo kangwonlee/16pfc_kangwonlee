@@ -8,6 +8,11 @@ def new(num_buckets=256):
     :param num_buckets:
     :return:
     """
+    aMap = []
+    for i in range(0, num_buckets, ):
+        aMap.append([])
+    return aMap
+
 
 # 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
