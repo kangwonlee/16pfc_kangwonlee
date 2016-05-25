@@ -55,6 +55,9 @@ state = states.get('Texas')
 if not state:
     print("Sorry, no Texas.")
 
+# get a city with a default value
+city = cities.get('TX', 'Not Entered Yet')
+print("The city for the state 'TX' is: %s" % city)
 
 # 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
