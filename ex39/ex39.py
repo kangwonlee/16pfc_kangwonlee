@@ -33,6 +33,9 @@ print("Florida's abbreviation is: %s" % states['Florida'])
 
 # print every state abbreviation
 print('-' * 10)
+print("stats = %s" % states)
+print("states.items() = %s" % str(states.items()))
+print('-' * 10)
 for state, abbrev in states.items():
     print("%s is abbreviated %s" % (state, abbrev))
 
