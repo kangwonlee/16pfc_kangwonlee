@@ -65,6 +65,26 @@ def get(aMap, key, default=None):
     i, k, v = get_slot(aMap, key, default=default)
     return v
 
+
+def set(aMap, key, value):
+    """
+    Sets the key to the value, replacing any existing value.
+    :param aMap:
+    :param key:
+    :param value:
+    :return:
+    """
+    bucket = get_bucket(aMap, key)
+    i, k, v = get_slot(aMap, key)
+
+    if 0 <= i:
+        # the key exists, replace it
+        bucket[i] = (key, value)
+    else:
+        # the key does not, append to create it
+        bucket.append((key, value))
+
+
 # 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
 # 각자 Study drills 시도 후 필요시 commit  # 오류노트 에 각자 오류노트 작성
