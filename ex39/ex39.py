@@ -48,6 +48,14 @@ for state, abbrev in states.items():
         state, abbrev, cities[abbrev]
     ))
 
+print('-' * 10)
+# safely get a abbreviation by state that might not be there
+state = states.get('Texas')
+
+if not state:
+    print("Sorry, no Texas.")
+
+
 # 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
 # 각자 Study drills 시도 후 필요시 commit  # 오류노트 에 각자 오류노트 작성
