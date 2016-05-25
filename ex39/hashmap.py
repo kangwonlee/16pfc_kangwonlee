@@ -44,6 +44,14 @@ def get_slot(aMap, key, default=None):
     :param default:
     :return:
     """
+    bucket = get_bucket(aMap, key)
+
+    for i, kv in enumerate(bucket):
+        k, v = kv
+        if key == k:
+            return i, k, v
+
+    return -1, key, default
 
 # 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
