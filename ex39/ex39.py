@@ -7,13 +7,13 @@ states = {
     'Florida': 'FL',
     'California': 'CA',
     'New York': 'NY',
-    'Michigan': 'MI'
+    'Hawaii': 'HI'
 }
 
 # create a basic set of states and some cities in them
 cities = {
     'CA': 'San Francisco',
-    'MI': 'Detroit',
+    'HI': 'Detroit',
     'FL': 'Jacksonville'
 }
 
@@ -28,7 +28,7 @@ print('OR State has: %s' % cities['OR'])
 
 # print some states
 print('-' * 10)
-print("Michigan's abbreviation is: %s" % states['Michigan'])
+print("Hawaii's abbreviation is: %s" % states['Hawaii'])
 print("Florida's abbreviation is: %s" % states['Florida'])
 
 # print every state abbreviation
