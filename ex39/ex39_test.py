@@ -1,6 +1,15 @@
 # -*-coding:utf8
 # http://learnpythonthehardway.org/book/ex39.html
 
+import hashmap
+
+# create a mapping of state to abbreviation
+states = hashmap.new()
+hashmap.set(states, 'Oregon', 'OR')
+hashmap.set(states, 'Florida', 'FL')
+hashmap.set(states, 'California', 'CA')
+hashmap.set(states, 'New York', 'NY')
+hashmap.set(states, 'Michigan', 'MI')
 
 # 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
