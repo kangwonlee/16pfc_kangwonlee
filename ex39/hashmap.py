@@ -101,6 +101,16 @@ def delete(aMap, key):
             break
 
 
+def list(aMap):
+    """
+    Prints out what's in the Map.
+    :param aMap:
+    :return:
+    """
+    for bucket in aMap:
+        if bucket:
+            for k, v in bucket:
+                print k, v
 
 # 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
