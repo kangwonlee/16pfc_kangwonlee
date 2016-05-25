@@ -9,7 +9,7 @@ hashmap.set(states, 'Oregon', 'OR')
 hashmap.set(states, 'Florida', 'FL')
 hashmap.set(states, 'California', 'CA')
 hashmap.set(states, 'New York', 'NY')
-hashmap.set(states, 'Michigan', 'MI')
+hashmap.set(states, 'Hawaii', 'HI')
 
 # create a basic set of states and some cities in them
 cities = hashmap.new()
@@ -20,6 +20,11 @@ hashmap.set(cities, 'FL', 'Orlando')
 # add some more cities
 hashmap.set(cities, 'NY', 'New York')
 hashmap.set(cities, 'OR', 'Portland')
+
+# print out some cities
+print('-' * 10)
+print("NY State has: %s" % hashmap.get(cities, 'NY'))
+print("HI State has: %s" % hashmap.get(cities, 'HI'))
 
 # 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
