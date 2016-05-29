@@ -41,11 +41,10 @@ class SimpleCashCard:
         print "SimpleCashCard check_balance()"  # 함수 호출 표식
         # 통장 잔고를 반환한다
         return self.balance_won
-
-
 # SimpleCashCard 클래스 정의 끝
 
-# 이 파일이 실행될 때만 아래의 내용이 실행됨    
+
+# 아래의 내용은 이 파일이 import 될 때는 실행되지 않음
 if "__main__" == __name__:
     # Cash Card User 모듈의 msg_int 함수를 사용할 수 있게 함
     from CashCard_user import chk_bal
