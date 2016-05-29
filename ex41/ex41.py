@@ -1,6 +1,6 @@
 # coding: utf8
 # 참고문헌: http://learnpythonthehardway.org/book/ex41.html
-#   https://wikidocs.net/27
+#   https://wikidocs.net/28
 # 각 행 주석 입력 후 commit
 
 import random
