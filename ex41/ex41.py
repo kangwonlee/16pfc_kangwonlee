@@ -62,6 +62,24 @@ def convert(snippet, phrase):
     return results
 
 
+try:
+    while True:
+        snippets = PHRASES.keys()
+        random.shuffle(snippets)
+
+        for snippet in snippets:
+            phrase = PHRASES[snippet]
+            question, answer = convert(snippet, phrase)
+            if PHRASE_FIRST:
+                question, answer = answer, question
+
+            print question
+
+            raw_input("> ")
+            print("답: %s\n\n" % answer)
+except EOFError:
+    print("\n안녕")
+
 # 각자 Study drills 시도 후 필요시 commit
 
 # 열린게시판 / 오류노트 에 각자 오류노트 작성
