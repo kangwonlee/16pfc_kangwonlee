@@ -20,10 +20,9 @@ class SafeCashCard(CashCard):
         # 잔고가 충분하면
         if self.check_balance() >= amount_won:
             # 출금한다
-            # 상위 클래스의 withdraw 메소드 호출시도 2
+            # 상위 클래스의 withdraw 메소드 호출
             # http://stackoverflow.com/questions/805066/how-to-call-a-parent-classs-method-from-child-class-in-python
             CashCard.withdraw(self, amount_won)
-            # self.balance_won -= amount_won
         # 그렇지 않으면
         else:
             # 오류를 표시한다
@@ -33,7 +32,7 @@ class SafeCashCard(CashCard):
 # SafeCashCard 클래스 정의 끝
 
 
-# 이 파일이 실행될 때만 아래의 내용이 실행됨    
+# 이 파일이 실행될 때만 아래의 내용이 실행됨
 if "__main__" == __name__:
     # Cash Card User 모듈의 msg_int 함수를 사용할 수 있게 함
     from CashCard_user import chk_bal
