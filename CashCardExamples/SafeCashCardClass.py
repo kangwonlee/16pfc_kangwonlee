@@ -21,7 +21,7 @@ class SafeCashCard(CashCard):
         if self.check_balance() >= amount_won:
             # 출금한다
             # 상위 클래스의 withdraw 메소드 호출
-            # http://stackoverflow.com/questions/805066/how-to-call-a-parent-classs-method-from-child-class-in-python
+            # http://stackoverflow.com/questions/805066/
             CashCard.withdraw(self, amount_won)
         # 그렇지 않으면
         else:
