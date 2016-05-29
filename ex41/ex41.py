@@ -32,6 +32,35 @@ for word in urlopen(WORD_URL).readlines():
     WORDS.append(word.strip())
 
 
+def convert(snippet, phrase):
+    class_names = [w.capitalize() for w in
+                   random.sample(WORDS, snippet.count("%%%"))]
+
+    other_names = random.sample(WORDS, snippet.count("***"))
+
+    results = []
+    param_names = []
+
+    for i in xrange(0, snippet.count("@@@")):
+        param_count = random.randint(1, 3)
+        param_names.append(', '.join(random.sample(WORDS, param_count)))
+
+    for sentence in snippet, phrase:
+        result = sentence[:]
+
+        for word in class_names:
+            result = result.replace("%%%", word, 1)
+
+        for word in other_names:
+            result = result.replace("***", word, 1)
+
+        for word in param_names:
+            result = result.replace("@@@", word, 1)
+
+        results.append(result)
+
+    return results
+
 
 # 각자 Study drills 시도 후 필요시 commit
 
