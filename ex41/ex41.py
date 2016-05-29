@@ -24,6 +24,14 @@ PHRASES = {
         "객체 ***로 부터 속성 *** 을 찾아 그 값을 '***' 으로 바꾼다",
 }
 
+PHRASE_FIRST = False
+if (len(sys.argv) == 2) and (sys.argv[1] == "한글"):
+    PHRASE_FIRST = True
+
+for word in urlopen(WORD_URL).readlines():
+    WORDS.append(word.strip())
+
+
 
 # 각자 Study drills 시도 후 필요시 commit
 
