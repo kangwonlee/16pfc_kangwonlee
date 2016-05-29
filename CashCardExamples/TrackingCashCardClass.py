@@ -70,13 +70,15 @@ class HistoryCashCard(SafeCashCard):
         # 지금 까지 멤버 변수 self.history에 모인
         # 사용 내역을 하나씩 출력함
 
-        print('%25s %10s %10s %10s' % ('time and date', 'activity', 'amount', 'balance'))
+        print('%25s %10s %10s %10s' % (
+            'time and date', 'activity', 'amount', 'balance'))
         # 사용 내역 루프 시작
         for record in self.history:
             # 각 내역 별로
             # 시간, 잔고 출력
             print('%25s %10s %10d %10d' %
-                  (time.asctime(record['time']), record['activity'], record['amount'], record['balance']))
+                  (time.asctime(record['time']),
+                   record['activity'], record['amount'], record['balance']))
         # 사용 내역 루프 끝
 
 
