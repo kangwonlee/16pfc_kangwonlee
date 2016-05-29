@@ -15,6 +15,17 @@ door to the north.""")
     assert_equal(gold.name, "GoldRoom")
     assert_equal(gold.paths, {})
 
+
+def test_room_paths():
+    center = Room("Center", "Test room in the center.")
+    north = Room("North", "Test room in the north.")
+    south = Room("South", "Test room in the south.")
+
+    center.add_paths({'north': north, 'south': south})
+
+    assert_equal(center.go('north'), north)
+    assert_equal(center.go('south'), south)
+
 # 각자 Study drills 시도 후 필요시 commit
 
 # 열린게시판 / 오류노트 에 각자 오류노트 작성
