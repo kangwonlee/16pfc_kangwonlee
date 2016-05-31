@@ -26,10 +26,10 @@ print("19. 'chunky'=='bacon' and not (3==4 or 3==3) = %s" % (
 print("20. 3==3 and not('testing'=='testing' or 'Python'=='Fun') = %s" % (
     (3 == 3) and not (('testing' == 'testing') or ('Python' == 'Fun'))))
 
-print("extra 1. 'test' and 'test' = = %s" % ('test' and 'test'))
-print("extra 2. 1 and 1 = = %s" % (1 and 1))
-print("extra 3. False and 1 = = %s" % (False and 1))
-print("extra 4. True and 1 = = %s" % (True and 1))
+print("extra 1. 'test' and 'test' = %s" % ('test' and 'test'))
+print("extra 2. 1 and 1 = %s" % (1 and 1))
+print("extra 3. False and 1 = %s" % (False and 1))
+print("extra 4. True and 1 = %s" % (True and 1))
 
 # 여기까지 입력 후 add, commit
 
