@@ -7,7 +7,7 @@ states = {
     'Florida': 'FL',
     'California': 'CA',
     'New York': 'NY',
-    'Hawaii': 'Hi',
+    'Hawaii': 'HI',
 }
 
 # create a basic set of states and some cities in them
@@ -50,6 +50,17 @@ for state, abbrev in states.items():
     print("%s state is abbreviated %s and has city %s" % (
         state, abbrev, cities[abbrev]
     ))
+
+print('-' * 10)
+# safely get an abbreviation by state that might not be there
+state = states.get('Texas')
+
+if not state:
+    print("Sorry no Texas yet.")
+
+# get a city with a default value
+city = cities.get('TX', 'Not Entered Yet')
+print("The city for the state 'TX' is: %s " % city)
 
 # 여기까지 입력 후 add, commit  # 각 행 주석 입력 후 commit
 
