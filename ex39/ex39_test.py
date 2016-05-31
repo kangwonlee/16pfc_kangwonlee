@@ -16,7 +16,7 @@ hashmap.set(states, 'Hawaii', 'HI')
 cities = hashmap.new()
 hashmap.set(cities, 'CA', 'Los Angeles')
 hashmap.set(cities, 'HI', 'Honolulu')
-hashmap.set(cities, 'OR', 'Orlando')
+hashmap.set(cities, 'FL', 'Orlando')
 
 # added some more cities
 hashmap.set(cities, 'NY', 'New York')
@@ -31,6 +31,11 @@ print("HI State has: %s" % hashmap.get(cities, 'HI'))
 print('-' * 10)
 print("Hawaii's abbreviation is: %s" % hashmap.get(states, 'Hawaii'))
 print("Florida's abbreviation is: %s" % hashmap.get(states, 'Florida'))
+
+# do it by using the state then cities dict
+print('-' * 10)
+print('Hawaii has: %s' % hashmap.get(cities, hashmap.get(states, 'Hawaii')))
+print('Florida has: %s' % hashmap.get(cities, hashmap.get(states, 'Florida')))
 
 # 여기까지 입력 후 add, commit
 
