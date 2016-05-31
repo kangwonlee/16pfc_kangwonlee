@@ -45,6 +45,16 @@ hashmap.list(states)
 print('-' * 10)
 hashmap.list(cities)
 
+print('-' * 10)
+state = hashmap.get(states, 'Texas')
+
+if not state:
+    print("Sorry, no Texas yet")
+
+# default values using | | = with the nill result
+# can you do this one line?
+city = hashmap.get(cities, 'TX', 'Not Entered Yet')
+print("The city for the state 'TX' is: %s" % city)
 
 # 여기까지 입력 후 add, commit
 
