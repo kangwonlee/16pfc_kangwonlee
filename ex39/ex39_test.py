@@ -12,6 +12,15 @@ hashmap.set(states, 'California', 'CA')
 hashmap.set(states, 'New York', 'NY')
 hashmap.set(states, 'Hawaii', 'HI')
 
+# create a basic set of states and some cities in them
+cities = hashmap.new()
+hashmap.set(cities, 'CA', 'Los Angeles')
+hashmap.set(cities, 'HI', 'Honolulu')
+hashmap.set(cities, 'OR', 'Orlando')
+
+# added some more cities
+hashmap.set(cities, 'NY', 'New York')
+hashmap.set(cities, 'OR', 'Portland')
 
 # 여기까지 입력 후 add, commit
 
