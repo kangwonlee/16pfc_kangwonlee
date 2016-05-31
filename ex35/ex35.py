@@ -1,5 +1,5 @@
 # -*-coding:utf8
-# http://learnpythonthehardway.org/book/ex34.html
+# http://learnpythonthehardway.org/book/ex35.html
 from sys import exit
 
 
