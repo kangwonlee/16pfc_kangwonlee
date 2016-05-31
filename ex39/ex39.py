@@ -15,6 +15,8 @@ cities = {
     'CA': 'Los Angeles',
     'HI': 'Honolulu',
     'FL': 'Orlando',
+    ('Korea', 02): 'Seoul',
+    ('Korea', 032): 'Inchon',
 }
 
 # add some more cities
@@ -25,6 +27,8 @@ cities['OR'] = 'Portland'
 print('-' * 10)
 print('NY State has: %s' % cities['NY'])
 print('OR State has: %s' % cities['OR'])
+print(cities[('Korea', 02)])
+print(cities[('Korea', 032)])
 
 # print some states
 print('-' * 10)
