@@ -31,3 +31,12 @@ def withdraw(amount_won):
     # 출금하면 잔고가 감소한다
     balance_won += (-amount_won)
 
+
+def check_balance():
+    """
+    Check how much money is in the cash card
+    :return:
+    """
+    # 통장 잔고를 반환한다
+    # reader function
+    return balance_won
