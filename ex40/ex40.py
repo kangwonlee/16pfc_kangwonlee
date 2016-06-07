@@ -4,3 +4,8 @@
 
 mystuff = {'apple': "I AM APPLES!"}
 print(mystuff['apple'])
+
+import mystuff_module
+
+mystuff_module.apple()
+print(mystuff_module.tangerine)
