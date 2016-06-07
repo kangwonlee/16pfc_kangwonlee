@@ -13,6 +13,8 @@ class SimpleCashCard:
         # 클래스 생성자 (컨스트럭터)
         # 멤버 변수 초기화
         # 각 카드 별로 따로 잔고를 기록한다
+
+        # TODO: 모듈과는 다른 이름 사용. instance_balance_won 등
         self.balance_won = 0
 
     # 메소드 methods :
