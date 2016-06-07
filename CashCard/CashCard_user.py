@@ -12,3 +12,8 @@ def chk_bal(message, account):
     :return:
     """
     print("%s : %d" % (message, account.check_balance()))
+
+# 아래의 내용은 이 .py 파일이 import 될 때는 실행되지 않음
+if '__main__' == __name__:
+    # 현금 카드 모듈의 잔액 확인
+    chk_bal("CashCard_module 잔액확인", CashCard_module)
