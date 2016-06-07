@@ -39,4 +39,8 @@ happy_bday = Song(["Happy birthday to you",
                    "So I'll stop right there"])
 
 bulls_on_parade = Song(["They rally around tha family",
-                        "With pockets full of sheels"])
+                        "With pockets full of shells"])
+
+happy_bday.sing_a_song()
+
+bulls_on_parade.sing_a_song()
