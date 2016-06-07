@@ -46,3 +46,7 @@ def test_map():
 if __name__ == '__main__':
     # http://nose.readthedocs.io/en/latest/usage.html
     nose.main()
+
+# 각자 Study drills 시도 후 필요시 commit
+
+# 오류 노트에 각자 작성
