@@ -33,3 +33,7 @@ class Song(object):
         for line in self.lyrics:
             print(line)
 # end class Song
+
+happy_bday = Song(["Happy birthday to you",
+                   "I don't want to get sued",
+                   "So I'll stop right there"])
