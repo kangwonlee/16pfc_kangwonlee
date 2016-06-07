@@ -16,3 +16,7 @@ class Room(object):
         self.paths.update(paths)
 
 # end class Room
+
+# 각자 Study drills 시도 후 필요시 commit
+
+# 오류 노트에 각자 작성
