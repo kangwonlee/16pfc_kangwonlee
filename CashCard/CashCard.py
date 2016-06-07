@@ -16,3 +16,18 @@ def deposit(amount_won):
 
     # 입금하면 잔고가 증가한다
     balance_won += amount_won
+
+
+def withdraw(amount_won):
+    """
+    Withdraw some amount of money from cash card
+    :param amount_won:
+    :return:
+    """
+    # deposit 함수 안의 balance_won 이
+    # 전역변수임을 표시
+    global balance_won
+
+    # 출금하면 잔고가 감소한다
+    balance_won += (-amount_won)
+
